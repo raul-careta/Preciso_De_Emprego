@@ -66,10 +66,6 @@ strong {
     width: 16vw;
 }
 
-#menoo:hover #menuOculto li {
-    display: block;
-}
-
 #menuOculto li {
     padding: .6em;
     display: none;
