@@ -1,0 +1,76 @@
+header {
+    background-position: center;
+}
+
+.lista-experiencia {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.lista-experiencia li {
+    margin-top: 1em;
+}
+
+.lista-experiencia li a {
+    color: white;
+}
+
+p {
+    line-height: 25px;
+}
+
+#margin5 {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+
+}
+
+#margin0 {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+article {
+    margin-right: 8rem;
+}
+
+.branco {
+    color: rgb(255, 255, 255);
+}
+
+.imagemEsquerda {
+    float: left;
+    margin: 10rem 1rem 1rem 2rem;
+    width: 30%;
+}
+
+.imagemDireita {
+    float: right;
+    display: flex;
+    justify-content: end;
+    margin: 10rem 2rem 1rem 1rem;
+    max-height: 300px;
+}
+
+#direita {
+    width: 30%;
+}
+
+#textoDireita {
+    text-align: end;
+}
+
+.voltar-topo {
+    background: rgba(255, 255, 255, 0.261);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em auto;
+    width: 12%;
+}
+
+footer {
+    clear: left;
+    margin-top: 15rem;
+}

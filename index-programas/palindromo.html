@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromo</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/palindromo.css">
+</head>
+
+<body>
+    <header id="topo">
+        <h1 class="flex">palíndromo</h1>
+        <nav class="menu-home menu-paginas">
+            <a href="../index/index.html">Home</a>
+        </nav>
+    </header>
+    <section>
+        <h2 class="flex">Digite um palíndromo ou não</h2>
+        <p class="flex">Palíndromo são as palavras que significam a mesma coisa lidas de trás para frente</p>
+        <p class="flex">Exemplo: radar, osso, socorram-me subi no onibus em marrocos</p>
+        <p class="flex">Números também contam</p>
+        <input id="input" class="input" type="text" maxlength="50">
+        <button class="btn-verificar" onclick="verificarPalindromo()">Verificar</button>
+        <div class="flex">
+            <h3 id="resposta"></h3>
+        </div>
+
+    </section>
+    <footer class="flex">
+        <p>Nenhum direito reservado &copy </p>
+    </footer>
+    <script src="../js/palindromo/palindromo.js"></script>
+</body>
+
+</html>

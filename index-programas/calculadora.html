@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculadora.css">
+</head>
+
+<body>
+    <header id="topo">
+        <h1 class="flex">Calculadora básica</h1>
+        <nav class="menu-paginas">
+            <a href="../index/index.html">Home</a>
+        </nav>
+    </header>
+    <section class="flex">
+        <div class="calculadora">
+            <h2 class="flex">Calculadora</h2>
+            <div id="resultado" class="flex"></div>
+            <div class="flex">
+                <button id="btnApagar" class="btn-1" onclick="apagarTudo()">C</button>
+                <button class="btn-1" onclick="apagarUltimoCaractere()">Back</button>
+            </div>
+            <div class="flex">
+                <button onclick="inserirNumero('1')">1</button>
+                <button onclick="inserirNumero('2')">2</button>
+                <button onclick="inserirNumero('3')">3</button>
+                <button onclick="inserirNumero('+')">+</button>
+            </div>
+            <div class="flex">
+                <button onclick="inserirNumero('4')">4</button>
+                <button onclick="inserirNumero('5')">5</button>
+                <button onclick="inserirNumero('6')">6</button>
+                <button onclick="inserirNumero('-')">-</button>
+            </div>
+            <div class="flex">
+                <button onclick="inserirNumero('7')">7</button>
+                <button onclick="inserirNumero('8')">8</button>
+                <button onclick="inserirNumero('9')">9</button>
+                <button onclick="inserirNumero('*')">x</button>
+            </div>
+            <div class="flex linha-final">
+                <button onclick="inserirNumero('0')">0</button>
+                <button onclick="inserirNumero('.')">.</button>
+                <button onclick="inserirNumero('/')">/</button>
+                <button onclick="fazerConta()" onblur="apagarTudo()">=</button>
+            </div>
+        </div>
+    </section>
+    <div class="flex">
+        <p class="descricao-final">*Calculadora super básica</p>
+    </div>
+
+
+    <footer class="flex">
+        <p>Nenhum direito reservado &copy </p>
+    </footer>
+    <script src="../js/calculadora/calculadora.js"></script>
+</body>
+
+</html>

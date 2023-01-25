@@ -1,0 +1,306 @@
+:root {
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+}
+
+/*em todas as janelas aplica isso ja que muitos elementos 
+possuem essas mesmas propriedades*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-paginas {
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+a {
+    text-shadow: 0px -1px 5px black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    border-bottom: 1px solid rgb(0, 255, 110);
+}
+
+b {
+    font-weight: bold;
+}
+
+body {
+    background: url(../imgens/body.jpg) center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .5s;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2em;
+}
+
+header {
+    background: url(../imgens/header.jpg)left;
+    background-size: 150%;
+    height: 30vh;
+}
+
+strong {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#menu-principal {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5em;
+}
+
+#menuOculto {
+    position: absolute;
+    width: 16vw;
+}
+
+#menoo:hover #menuOculto li {
+    display: block;
+}
+
+#menuOculto li {
+    padding: .6em;
+    display: none;
+}
+
+#menuOculto li a {
+    text-shadow: 0px 0px 5px black;
+}
+
+#menuOculto li:first-child {
+    padding-top: 1.5em;
+}
+
+h1 {
+    color: rgb(255, 55, 0);
+    padding-top: 3rem;
+}
+
+h2 {
+    display: inline-block;
+    margin: 6rem 0 2rem 0;
+}
+
+h3,
+h4 {
+    margin: 1em 2em 2em 2em;
+}
+
+.info-inicial {
+    padding: 2em 4em;
+    width: auto;
+    background: rgba(75, 75, 75, 0.3);
+    margin: 1em 2em;
+}
+
+.info-titulo {
+    margin: 0;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+
+.imagem-contrato {
+    width: 25%;
+    min-width: 250px;
+    float: left;
+    margin: 6rem 2rem 1em 2rem;
+}
+
+.menor {
+    font-size: 14px;
+}
+
+.conteiner-estudei {
+    background-color: rgba(210, 210, 210, 0.5);
+    width: auto;
+    height: auto;
+    margin: 5em 2em;
+    padding: 2em;
+}
+
+.conteiner-estudei p {
+    font-size: 20px;
+}
+
+.estudei-curso {
+    list-style: inherit;
+    margin-left: 3em;
+    margin-top: 2em;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.estudei-curso li {
+    margin-bottom: .8em;
+}
+
+#irParaTopo {
+    transition: .2s;
+}
+
+#irParaTopo:hover {
+    font-size: 24px;
+    border-bottom: none;
+}
+
+.topoApagar {
+    display: none;
+}
+
+#fim {
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: 5rem;
+    margin-bottom: 1em;
+    animation: pisca 4s infinite;
+}
+
+/* ----- EFEITO ----- */
+@keyframes pisca {
+    0% {
+        color: yellow;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    100% {
+        color: yellow;
+    }
+
+}
+
+/* ----- FIM DO EFEITO ----- */
+
+footer {
+    background: rgba(75, 75, 75, 0.7);
+    color: rgb(235, 234, 234);
+    height: 10vh;
+    margin-top: 15rem;
+}
+
+.footer-principal {
+    height: 30vh;
+}
+
+.ultimo-paragrafo {
+    margin: 0 0 1.5em 0;
+    padding-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 20vh;
+    }
+
+    h1 {
+        padding-top: .7em;
+        font-size: 28px;
+    }
+
+    p {
+        margin-right: 2em;
+    }
+
+    #menu-principal {
+        margin-top: 3em;
+    }
+
+    #menu-principal a {
+        font-size: 16px;
+    }
+
+    .menu-home {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 2em;
+    }
+
+    #menoo:hover #menuOculto {
+        background: rgba(62, 62, 62, 0.748);
+        width: auto;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .info-inicial {
+        padding: 2em 0;
+        width: auto;
+        background: rgba(75, 75, 75, 0.3);
+    }
+
+    #menu-principal {
+        display: none;
+    }
+}
+
+@media screen and (max-width:749px) {
+    .imagem-contrato {
+        display: block;
+        margin: 3em auto;
+        float: none;
+        width: 70%;
+    }
+
+    h2,
+    h4 {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2em 0;
+    }
+
+    #fim {
+        font-size: 20px;
+        margin: 0 auto 1em auto;
+        animation: none;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width:475px) {
+
+    h2,
+    h4 {
+        margin: 0 2em 2em;
+    }
+
+    .conteiner-estudei p {
+        margin: 0 0 1em 0;
+    }
+
+    .estudei-curso {
+        margin: 0;
+    }
+
+    #fim {
+        display: none;
+    }
+
+    .topoApagar {
+        display: inline;
+    }
+}

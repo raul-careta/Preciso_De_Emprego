@@ -1,0 +1,74 @@
+header {
+    background-position: bottom;
+}
+
+.menu-home {
+    margin: 4em 0 0 2em;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 4em;
+}
+
+#menor-valor {
+    margin: 0 8px;
+}
+
+#maior-valor {
+    margin: 0 8px;
+
+}
+
+.mensagem {
+    font-size: 1.5em;
+}
+
+#invalido {
+    font-size: 20px;
+}
+
+#numeroErrado {
+    font-size: 20px;
+}
+
+.box {
+    border: 2px solid rgb(113, 113, 113);
+    font-size: 2em;
+    padding: 10px;
+    margin: 20px;
+}
+
+.respostaNumero {
+    font-size: 2em;
+    margin: 0;
+}
+
+.btn-jogar {
+    background: rgb(185, 181, 186);
+    border: transparent;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgb(135, 125, 154);
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    padding: .5em;
+    transition: .2s;
+    margin: 3em auto;
+    width: 20%;
+}
+
+.btn-jogar:hover {
+    color: rgb(23, 0, 49);
+    font-size: 19px;
+}
