@@ -76,16 +76,23 @@ h4 {
     margin: 1em 2em 2em 2em;
 }
 
-.info-inicial {
-    padding: 2em 4em;
-    width: auto;
+.info-container {
+    padding: 2em 2em;
     background: rgba(75, 75, 75, 0.3);
-    margin: 1em 2em;
+    margin: 2em;
 }
 
-.info-titulo {
-    margin: 1em 1em 2em 1em;
+.info-container p {
+    display: flex;
     text-align: center;
+    justify-content: center;
+}
+
+.info-container h2 {
+    margin: 1em 1em 2em 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .imagem-contrato {
@@ -96,7 +103,7 @@ h4 {
 }
 
 .menor {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .conteiner-estudei {
@@ -216,14 +223,12 @@ footer {
         display: block;
     }
 
-    .info-inicial {
-        padding: 2em 0;
-        width: auto;
-        background: rgba(75, 75, 75, 0.3);
-    }
-
     #menu-principal {
         display: none;
+    }
+
+    .info-container {
+        padding: .5em 0;
     }
 
     .dropdown,
