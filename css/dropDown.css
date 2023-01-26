@@ -8,17 +8,18 @@ body {
 
 .dropdown {
     position: absolute;
+    z-index: 4;
     color: white;
     right: 2em;
     top: 2em;
     list-style: none;
     font-size: 20px;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     transition: .6s;
 }
 
 .lista2 {
-    background: rgba(110, 110, 110, 0.5);
+    background: rgba(110, 110, 110, 0.8);
     position: absolute;
     top: 0;
     right: -280px;
@@ -32,27 +33,23 @@ body {
     border-bottom: 3px solid rgb(70, 126, 46);
 }
 
-.checkbox-oculto:checked~.lista2 {
-    opacity: 100%;
-    right: 0em;
-    padding-top: 100px;
-    padding-left: 2em;
-    top: 0;
-}
-
-a:hover {
-    color: rgb(184, 184, 184);
-}
-
 .checkbox-oculto {
     position: absolute;
     z-index: 5;
     width: 26px;
     height: 26px;
     cursor: pointer;
-    opacity: 50%;
+    opacity: 0;
     right: 2.5em;
     top: 2.7em;
+}
+
+.checkbox-oculto:checked~.lista2 {
+    opacity: 100%;
+    right: 0em;
+    padding-top: 100px;
+    padding-left: 2em;
+    top: 0;
 }
 
 .checkbox-oculto:checked~.dropdown {

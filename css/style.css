@@ -134,7 +134,7 @@ h4 {
 }
 
 .topoApagar {
-    display: none; 
+    display: none;
 }
 
 #fim {
@@ -220,6 +220,12 @@ footer {
     }
 
     #menu-principal {
+        display: none;
+    }
+
+    .dropdown,
+    .checkbox-oculto,
+    .menu2 {
         display: none;
     }
 }
