@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: rgb(58, 58, 58);
-}
-
 .checkbox:checked~.lista {
     opacity: 100%;
     left: 0em;

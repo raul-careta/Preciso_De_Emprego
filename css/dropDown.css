@@ -1,27 +1,60 @@
 * {
-    text-decoration: none;
-    color: rgb(226, 226, 226);
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.dropdown {
+    position: absolute;
+    color: white;
+    right: 2em;
+    top: 2em;
     list-style: none;
+    font-size: 20px;
+    transform: rotate(90deg);
+    transition: .6s;
 }
 
-.checkbox-dropdown {
-    width: 10px;
-    height: 10px;
-    opacity: 40%;
-}
-
-.checkbox-dropdown:checked~#menuOculto li {
-    display: block;
-}
-
-#menuOculto {
+.lista2 {
     background: rgba(110, 110, 110, 0.5);
-    left: -250px;
+    position: absolute;
+    top: 0;
+    right: -280px;
     height: 100vh;
     width: auto;
     line-height: 40px;
     padding: 100px 4em 1em 2em;
     font-size: 18px;
     transition: 1s;
-    border-right: 3px solid rgb(70, 126, 46);
+    border-left: 3px solid rgb(70, 126, 46);
+    border-bottom: 3px solid rgb(70, 126, 46);
+}
+
+.checkbox-oculto:checked~.lista2 {
+    opacity: 100%;
+    right: 0em;
+    padding-top: 100px;
+    padding-left: 2em;
+    top: 0;
+}
+
+a:hover {
+    color: rgb(184, 184, 184);
+}
+
+.checkbox-oculto {
+    position: absolute;
+    z-index: 5;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    opacity: 50%;
+    right: 2.5em;
+    top: 2.7em;
+}
+
+.checkbox-oculto:checked~.dropdown {
+    transform: rotate(0deg);
 }

@@ -61,22 +61,6 @@ strong {
     margin-top: 5em;
 }
 
-#menuOculto {
-    width: 16vw;
-}
-
-#menuOculto li {
-    padding: .6em;
-}
-
-#menuOculto li a {
-    text-shadow: 0px 0px 5px black;
-}
-
-#menuOculto li:first-child {
-    padding-top: 1.5em;
-}
-
 h1 {
     color: rgb(255, 55, 0);
     padding-top: 3rem;
@@ -150,7 +134,7 @@ h4 {
 }
 
 .topoApagar {
-    display: none;
+    display: none; 
 }
 
 #fim {
@@ -223,18 +207,6 @@ footer {
 
     #menu-principal a {
         font-size: 16px;
-    }
-
-    .menu-home {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 2em;
-    }
-
-    #menoo:hover #menuOculto {
-        background: rgba(62, 62, 62, 0.748);
-        width: auto;
     }
 
     .menu-hamburguer {
