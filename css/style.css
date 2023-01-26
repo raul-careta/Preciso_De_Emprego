@@ -2,6 +2,10 @@
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*em todas as janelas aplica isso ja que muitos elementos 
 possuem essas mesmas propriedades*/
 .flex {

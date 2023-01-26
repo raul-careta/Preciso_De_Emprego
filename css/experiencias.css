@@ -2,10 +2,6 @@ header {
     background-position: center;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .lista-experiencia {
     margin-left: 2em;
     margin-top: 2em;
