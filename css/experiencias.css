@@ -2,6 +2,10 @@ header {
     background-position: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .lista-experiencia {
     margin-left: 2em;
     margin-top: 2em;
@@ -22,7 +26,6 @@ p {
 #margin5 {
     margin-top: 10rem;
     margin-bottom: 4rem;
-
 }
 
 #margin0 {
@@ -42,35 +45,56 @@ article {
     float: left;
     margin: 10rem 1rem 1rem 2rem;
     width: 30%;
-}
-
-.imagemDireita {
-    float: right;
-    display: flex;
-    justify-content: end;
-    margin: 10rem 2rem 1rem 1rem;
-    max-height: 300px;
-}
-
-#direita {
-    width: 30%;
-}
-
-#textoDireita {
-    text-align: end;
+    min-width: 300px;
 }
 
 .voltar-topo {
-    background: rgba(255, 255, 255, 0.261);
     border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 4em auto;
-    width: 12%;
+    width: 150px;
 }
 
-footer {
-    clear: left;
-    margin-top: 15rem;
+@media screen and (max-width: 768px) {
+    .esconder-paragrafo {
+        display: none;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    article {
+        margin: 0;
+    }
+
+    .imagemEsquerda {
+        float: none;
+        width: 70%;
+        margin: 0;
+        border-radius: 10px;
+    }
+
+    .article-div {
+        align-items: center;
+        background: rgba(0, 0, 0, .4);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 2em auto;
+        padding: 2em;
+        width: 80%;
+    }
+
+    #margin5 {
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+        margin: 1em;
+    }
 }
