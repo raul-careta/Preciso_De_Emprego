@@ -1,5 +1,27 @@
+* {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    list-style: none;
+}
+
 .checkbox-dropdown {
     width: 10px;
     height: 10px;
     opacity: 40%;
+}
+
+.checkbox-dropdown:checked~#menuOculto li {
+    display: block;
+}
+
+#menuOculto {
+    background: rgba(110, 110, 110, 0.5);
+    left: -250px;
+    height: 100vh;
+    width: auto;
+    line-height: 40px;
+    padding: 100px 4em 1em 2em;
+    font-size: 18px;
+    transition: 1s;
+    border-right: 3px solid rgb(70, 126, 46);
 }

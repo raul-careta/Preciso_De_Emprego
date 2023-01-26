@@ -62,17 +62,11 @@ strong {
 }
 
 #menuOculto {
-    position: absolute;
     width: 16vw;
-}
-
-#menoo:hover #menuOculto li {
-    display: block;
 }
 
 #menuOculto li {
     padding: .6em;
-    display: none;
 }
 
 #menuOculto li a {
