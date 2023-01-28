@@ -16,7 +16,8 @@
     height: 40px;
     transform: rotate(180deg);
     transition: .6s;
-    z-index: 4;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .lista2 {
@@ -35,14 +36,7 @@
 }
 
 .checkbox-oculto {
-    position: absolute;
-    z-index: 5;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    opacity: 0;
-    right: 2em;
-    top: 2em;
+    display: none;
 }
 
 .checkbox-oculto:checked~.lista2 {
@@ -53,6 +47,6 @@
     top: 0;
 }
 
-.checkbox-oculto:checked~.dropdown {
+.checkbox-oculto:checked~label .dropdown {
     transform: rotate(0deg);
 }
