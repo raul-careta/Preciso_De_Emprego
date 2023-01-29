@@ -19,5 +19,5 @@ function apagarTudo() {
 //sinal de igual "="
 //eval() faz a conta automaticamente
 function fazerConta() {
-    numero.innerHTML = eval(numero.innerHTML)
+    numeroinnerHTML = eval(numero.innerHTML)
 }
