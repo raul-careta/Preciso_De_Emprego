@@ -11,8 +11,8 @@ body {
     background: url(../imgens/body.jpg) center;
     font-family: Arial, Helvetica, sans-serif;
     transition: .5s;
-    overflow-x: hidden;
     position: relative;
+    overflow-x: hidden;
 }
 
 /*em todas as janelas aplica isso ja que muitos elementos 
@@ -23,9 +23,14 @@ possuem essas mesmas propriedades*/
     align-items: center;
 }
 
+
+
 .menu-paginas {
-    margin-top: 5em;
     margin-left: 2em;
+}
+
+.menu-paginas a {
+    font-size: 20px;
 }
 
 .topo-escondido {
@@ -214,10 +219,6 @@ footer p:last-child {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        height: 20vh;
-    }
-
     h1 {
         font-size: 24px;
     }
@@ -226,16 +227,16 @@ footer p:last-child {
         margin-right: 2em;
     }
 
+    .botao-home {
+        font-size: 14px;
+    }
+
     #menu-principal {
         margin-top: 3em;
     }
 
     #menu-principal a {
         font-size: 16px;
-    }
-
-    .menu-paginas {
-        margin-top: 3em;
     }
 
     .menu-hamburguer {
@@ -265,6 +266,10 @@ footer p:last-child {
         width: 70%;
     }
 
+    header {
+        height: 15vh;
+    }
+
     h2,
     h4 {
         display: flex;
@@ -281,6 +286,13 @@ footer p:last-child {
 }
 
 @media screen and (max-width:475px) {
+    header {
+        padding: 10px;
+    }
+
+    .menu-paginas {
+        margin-bottom: 0;
+    }
 
     h2,
     h4 {

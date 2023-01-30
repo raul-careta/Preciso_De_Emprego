@@ -8,11 +8,12 @@ header {
 }
 
 .lista-experiencia li {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .lista-experiencia li a {
     color: white;
+    font-weight: 600;
 }
 
 p {
@@ -56,6 +57,10 @@ article {
 @media screen and (max-width: 768px) {
     .esconder-paragrafo {
         display: none;
+    }
+
+    .lista-experiencia li {
+        margin-top: 1.4em;
     }
 
     h2 {

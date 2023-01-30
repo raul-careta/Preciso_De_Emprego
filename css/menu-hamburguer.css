@@ -94,3 +94,11 @@
 .list-item {
     margin-left: 2em;
 }
+
+.checkbox-meus {
+    display: none;
+}
+
+.checkbox-meus:checked~.programasOcultos {
+    display: block;
+}
