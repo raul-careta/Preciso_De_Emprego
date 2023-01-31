@@ -4,15 +4,12 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
     background: url(../imgens/body.jpg) center;
     font-family: Arial, Helvetica, sans-serif;
     transition: .5s;
-    position: relative;
-    overflow-x: hidden;
 }
 
 /*em todas as janelas aplica isso ja que muitos elementos 
@@ -221,6 +218,10 @@ footer p:last-child {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 24px;
+    }
+
+    .section3 {
+        display: none;
     }
 
     p {
