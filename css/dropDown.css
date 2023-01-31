@@ -44,7 +44,7 @@ html {
     height: auto;
     width: auto;
     line-height: 40px;
-    padding: 100px 4em 1em 2em;
+    padding: 100px 4em 1em 1em;
     font-size: 18px;
     list-style: none;
     transition: .4s;
@@ -52,7 +52,7 @@ html {
     font-family: sans-serif;
 
     /* posição da lista ANTES de apertar o botão -------------------*/
-    right: -280px;
+    right: -379px;
     top: 0;
 }
 
@@ -74,8 +74,6 @@ html {
 .checkbox-oculto6:checked~.lista6 {
     opacity: 100%;
     right: 0em;
-    padding-top: 100px;
-    padding-left: 2em;
     top: 0;
 }
 
