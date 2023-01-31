@@ -1,10 +1,5 @@
 body {
-    overflow-x: hidden;
     position: relative;
-}
-
-html {
-    overflow-x: hidden;
 }
 
 .section3 {

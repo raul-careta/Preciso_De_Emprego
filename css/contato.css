@@ -30,3 +30,21 @@ ul li {
 footer {
     margin-top: 15rem;
 }
+
+/* 768 ------------------------------------- */
+@media screen and (max-width: 768px) {
+    .contato-item {
+        text-align: center;
+    }
+
+    .contato-mapa {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .contato-item {
+        text-align: start;
+    }
+}

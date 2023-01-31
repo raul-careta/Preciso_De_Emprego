@@ -4,12 +4,14 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background: url(../imgens/body.jpg) center;
     font-family: Arial, Helvetica, sans-serif;
     transition: .5s;
+    overflow-x: hidden;
 }
 
 /*em todas as janelas aplica isso ja que muitos elementos 
