@@ -8,8 +8,21 @@
     text-decoration: none;
 }
 
+/* scrool bar */
+::-webkit-scrollbar {
+    width: 11px;
+    background: linear-gradient(45deg, green, rgb(115, 255, 0));
+}
+
+/* slide da scrool bar */
+::-webkit-scrollbar-thumb {
+    background: rgba(62, 66, 62, 0.74);
+    border-radius: 5px;
+    height: 90px;
+}
+
 :root {
-    --cor-de-fundo: rgb(40, 210, 0);
+    --cor-de-fundo: linear-gradient(60deg, rgb(0, 255, 0), rgb(0, 102, 54));
 }
 
 .flex {
@@ -53,26 +66,65 @@ h3 {
 }
 
 nav {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-bottom: 2px solid rgb(0, 90, 0);
     height: 70px;
 }
 
 nav a {
     font-size: 32px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .18);
-    color: rgb(61, 61, 61);
+    color: rgb(36, 36, 36);
     font-weight: 600;
     font-family: 'Aboreto', cursive;
 }
 
+/* animacao underline do menu ---------------------------*/
+.container-menu-landing a {
+    position: relative;
+}
+
+.container-menu-landing a::after {
+    content: '';
+    background: rgb(122, 122, 122);
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    transition: .2s ease-in-out;
+}
+
+.container-menu-landing a:hover::after {
+    width: 100%;
+}
+
+/* fim da animação --------------------------------- */
+/* animação linear gradient ------------------------ */
+
 .empresa {
     width: 100%;
     height: 80vh;
-    background: var(--cor-de-fundo);
+    background: linear-gradient(45deg, rgb(0, 177, 109), rgb(136, 255, 0), rgb(0, 180, 0));
+    background-size: 500% 100%;
     padding: 3em;
     padding-top: 8em;
+    animation: degrade-animado 3s infinite alternate;
 }
 
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+/* fim da animação linear gradient -------------------- */
 section {
     height: 100vh;
 }
@@ -140,7 +192,7 @@ section {
 }
 
 footer {
-    background: rgb(75, 75, 75);
+    background: linear-gradient(45deg, rgb(75, 75, 75), rgb(109, 109, 109));
     color: rgb(235, 234, 234);
     height: auto;
     padding: 1.5em;
@@ -163,6 +215,16 @@ footer {
 }
 
 /* responsividade */
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        padding-bottom: 15px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     nav a {
@@ -191,6 +253,10 @@ footer {
 @media screen and (max-width: 515px) {
     nav a {
         font-size: 14px;
+    }
+
+    h2 {
+        margin-top: 2em;
     }
 
     .div5 {
@@ -223,7 +289,7 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
         display: flex;
-        color: red;
+        border-bottom: none;
     }
 
     div {
@@ -248,8 +314,12 @@ footer {
     }
 }
 
-@media screen and (max-width: 306px) {
+@media screen and (max-width: 365px) {
     h2 {
+        font-size: 30px;
+    }
+
+    h3 {
         font-size: 30px;
     }
 }
@@ -260,7 +330,6 @@ footer {
     }
 
     h3 {
-        font-size: 30px;
         padding: .5em;
     }
 
