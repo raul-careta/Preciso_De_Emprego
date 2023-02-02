@@ -16,3 +16,13 @@ if (h3.length) {
         mostrarAnimacao()
     })
 }
+
+//pre loader
+const loader = document.getElementById('preloader')
+
+window.addEventListener('load', function () {
+    setTimeout(() => {
+        
+        loader.style.display = 'none'
+    }, 1500);
+})
