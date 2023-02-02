@@ -27,7 +27,7 @@
     border-top: 5px solid transparent;
     border-radius: 50%;
     box-shadow: 0 0 30px rgb(200, 255, 0), inset 0 0 13px rgb(0, 255, 0);
-    animation: girarBolinha .74s  alternate infinite;
+    animation: girarBolinha .76s  alternate infinite;
 }
 
 @keyframes girarBolinha {
