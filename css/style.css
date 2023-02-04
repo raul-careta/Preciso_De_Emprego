@@ -82,6 +82,10 @@ strong {
 
 h1 {
     color: rgb(255, 55, 0);
+    font-size: 5vw;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 h2 {
@@ -218,10 +222,6 @@ footer p:last-child {
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 24px;
-    }
-
     .section3 {
         display: none;
     }
@@ -297,6 +297,10 @@ footer p:last-child {
         margin-bottom: 0;
     }
 
+    h1 {
+        font-size: 22px;
+    }
+
     h2,
     h4 {
         margin: 0 2em 2em;
@@ -316,5 +320,11 @@ footer p:last-child {
 
     .topoApagar {
         display: inline;
+    }
+}
+
+@media screen and (max-width:330px) {
+    h1 {
+        font-size: 18px;
     }
 }
