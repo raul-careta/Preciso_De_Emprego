@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Audiowide', cursive;
+}
+
+/* scrool bar */
+::-webkit-scrollbar {
+    width: 1vw;
+    background: linear-gradient(270deg, rgb(150, 150, 150), rgb(0, 0, 0));
+}
+
+/* slide da scrool bar */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, white, black);
+}
+
+body {
+    background: black;
+    z-index: 50;
+}
+
+.embacar-topo {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 10vh;
+    height: auto;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    z-index: 10;
+}
+
+.embacar-topo-p {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.embacar-topo-logo {
+    background: linear-gradient(15deg, rgb(85, 85, 85), white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: embacarHeader 1.4s infinite alternate ease-in;
+    padding: 7em 0;
+}
+
+@keyframes embacarHeader {
+    0% {
+        filter: blur(0px);
+    }
+
+    90% {
+        filter: blur(2px);
+    }
+
+    100% {
+        filter: blur(4px);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 7vw;
+    font-size: 6vw;
+    width: 80%;
+}
+
+h2 {
+    font-size: 3vw;
+    background: linear-gradient(45deg, rgb(65, 65, 65), white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    animation: animarH2 1s infinite ease-in-out;
+}
+
+[data-animacao] {
+    transition: 1s;
+    opacity: 0;
+    transform: translateX(300px);
+}
+
+[data-animacao].animar {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+p {
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+p:hover {
+    color: rgb(195, 195, 195);
+    animation: bordaPulsante .6s infinite alternate linear;
+}
+
+@keyframes bordaPulsante {
+    from {
+        box-shadow: 0 0 2px rgb(93, 0, 255), inset 0 -1px 2px rgb(0, 13, 255);
+    }
+
+    to {
+        box-shadow: 0 0 10px rgb(195, 0, 255), inset 0 -4px 8px rgb(106, 0, 255);
+    }
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8vw 0;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+.foto1 {
+    background: url(./imagens/foto1.jpg)no-repeat center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.foto2 {
+    background: url(./imagens/foto2.jpg)no-repeat center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.foto3 {
+    background: url(./imagens/foto3.jpg)no-repeat center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(45deg, rgb(35, 35, 35), black);
+}
+
+.div-footer {
+    background: linear-gradient(5deg, rgb(128, 128, 128), white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+@media (min-width: 1400px) {
+    p {
+        font-size: 2vw;
+    }
+
+    .embacar-topo-p {
+        gap: 2vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .foto2 {
+        background-size: 130vw;
+    }
+
+    h1 {
+        margin-bottom: 14vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .foto2 {
+        background-size: 160vw;
+    }
+
+    section {
+        height: 70vh;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    .div-footer {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .foto2 {
+        background-size: 190vw;
+    }
+
+    header {
+        justify-content: start;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 570px) {
+    p {
+        font-size: 2.3vw;
+    }
+
+    .embacar-topo-p {
+        gap: 0;
+    }
+
+    .embacar-topo-logo {
+        font-size: 3vw;
+    }
+
+    .foto2 {
+        background-size: 230vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .embacar-topo {
+        flex-direction: column;
+        position: unset;
+    }
+
+    .embacar-topo-p {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .embacar-topo-p p {
+        transform: translateY(-350px);
+        transition: .4s;
+    }
+
+    p {
+        margin-top: .5em;
+        font-size: 4vw;
+    }
+
+    header {
+        min-height: 58vh;
+    }
+
+    .embacar-topo-logo {
+        font-size: 6vw;
+    }
+
+    header {
+        padding: 0em;
+    }
+
+    h1 {
+        margin-bottom: 16vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    section {
+        padding: 20vw 0;
+    }
+
+    .foto3 {
+        height: 80vh;
+        background-size: 150%;
+    }
+
+    .div-footer {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        margin-bottom: 20vw;
+    }
+
+    .embacar-topo-p {
+        width: 100%;
+    }
+
+    p {
+        display: block;
+    }
+
+    section {
+        height: 60vh;
+    }
+}
